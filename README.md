@@ -18,6 +18,11 @@ This is the repository for the streamlit presentation.
 
 ## Docuementation for Titanic Streamlit ML App
 
+- Anaconda Installation 
+ Windows - https://docs.anaconda.com/anaconda/install/windows/
+ Mac OS - https://docs.anaconda.com/anaconda/install/mac-os/
+ Linuix - https://docs.anaconda.com/anaconda/install/linux/
+
 - Fork Repo
 
 - Pickle titanic_ml.py 
