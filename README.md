@@ -18,12 +18,17 @@ This is the repository for the streamlit presentation.
 
 #  Docuementation for Titanic Streamlit ML App
 
-## Anaconda Installation <br>
-              - Windows - https://docs.anaconda.com/anaconda/install/windows/ <br>
-              - Mac OS - https://docs.anaconda.com/anaconda/install/mac-os/ <br>
-              - Linuix - https://docs.anaconda.com/anaconda/install/linux/ <br>
+## Anaconda Installation 
+- [Windows Installation](https://docs.anaconda.com/anaconda/install/windows/)
+ 
+- [Mac OS Installation](https://docs.anaconda.com/anaconda/install/mac-os/)
+  
+-  [Linuix Installation](https://docs.anaconda.com/anaconda/install/linux/)
 
 ## Fork Repo
+
+iliwycmbd_streamlit Reposistory - 
+[Create a Streamlit Account](https://github.com/byuibigdata/iliwycmbd_streamlit)
 
 ## Pickle iris_ml.py 
 
@@ -47,10 +52,20 @@ Start by trying to pickle the iris_ml_model.py file found within the iliwycmbd_s
 
 ## Publishing App on Streamlit Cloud
 
+This section will cover how to publish an app to streamlit cloud. This is very useful for making a dashboard avaliable for internal use within an orginization or for releasing a dashboard for public use.
 
+The first step in publishing an app with streamlit is to make sure that the necessary files have been uploaded to right github repositriy. If that has not been done, be sure to do that now. 
+
+After the files that are going to be published are pushed to github, it is time to log into streamlit. If an account needs to be created please use the following link. 
+
+```
+https://share.streamlit.io/signup
+```
+
+After logging in please navigate to the home page. This will look like the image below. To deploy a new app begin by selecting the button titled "New app". This button is highlighted in the image below. 
 
 ![create_project](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/creat_new_app.png)
 
-
+After clicking the buttom to create a new app you will be directed to this page. This is where you will naviage through your github account to find the app that you want to publish and select the desired pyton file. After the file is selected all you need to do is hit delpoy and your app will launch shortly!
 
 ![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/select_github_location.png)
