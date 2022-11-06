@@ -13,10 +13,60 @@ This is the repository for the streamlit presentation.
 - Finished Titanic ML app 
 
 ## ML Model deployment with Pickling 
+[Model Pickling Example & Docuementation](https://medium.com/@maziarizadi/pickle-your-model-in-python-2bbe7dba2bbb)
+
 
 ## Charts & Programming in Streamlit
+Streamlit docuementation and programing examples can be found here
+- [Streamlit Docuementation](https://docs.streamlit.io/)
 
-#  Docuementation for Titanic Streamlit ML App
+### Charts
+
+#### Line Charts 
+
+- [Line Chart Docuementation](https://docs.streamlit.io/library/api-reference/charts/st.line_chart)
+
+```
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
+```
+
+#### Bar Charts 
+
+- [Bar Chart Docuementation](https://docs.streamlit.io/library/api-reference/charts/st.bar_chart)
+
+```
+chart_data = pd.DataFrame(
+    np.random.randn(50, 3),
+    columns=["a", "b", "c"])
+
+st.bar_chart(chart_data)
+```
+
+#### Maps
+
+- [Map Chart Docuementation](https://docs.streamlit.io/library/api-reference/charts/st.map)
+
+```
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+
+st.map(df)
+```
+### UI Programing
+
+
+***
+
+#  Docuementation for Iris Streamlit ML App
 
 ## Anaconda Installation 
 - [Windows Installation](https://docs.anaconda.com/anaconda/install/windows/)
@@ -28,7 +78,7 @@ This is the repository for the streamlit presentation.
 ## Fork Repo
 
 iliwycmbd_streamlit Reposistory - 
-[Create a Streamlit Account](https://github.com/byuibigdata/iliwycmbd_streamlit)
+[iliwycmbd_streamlit Repo Link](https://github.com/byuibigdata/iliwycmbd_streamlit)
 
 ## Pickle iris_ml.py 
 
@@ -46,7 +96,11 @@ Start by trying to pickle the iris_ml_model.py file found within the iliwycmbd_s
 
 
 
-## Develop Streamlit app on titanic_app.py 
+## Develop Streamlit app on iris_app.py 
+
+If there are any questions, feel free to reference the completed steamlit app example file found here:
+
+[Iris Streamlit App Example](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/iris_app_example.py)
 
 ## Deploy app on Streamlit cloud
 
