@@ -18,10 +18,10 @@ This is the repository for the streamlit presentation.
 
 ## Docuementation for Titanic Streamlit ML App
 
-- Anaconda Installation 
- Windows - https://docs.anaconda.com/anaconda/install/windows/
- Mac OS - https://docs.anaconda.com/anaconda/install/mac-os/
- Linuix - https://docs.anaconda.com/anaconda/install/linux/
+- Anaconda Installation <br>
+              - Windows - https://docs.anaconda.com/anaconda/install/windows/ <br>
+              - Mac OS - https://docs.anaconda.com/anaconda/install/mac-os/ <br>
+              - Linuix - https://docs.anaconda.com/anaconda/install/linux/ <br>
 
 - Fork Repo
 
@@ -32,3 +32,10 @@ This is the repository for the streamlit presentation.
 - Deploy app on Streamlit cloud
 
 ## Publishing App on Streamlit Cloud
+
+![create_project](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/creat_new_app.png)
+
+
+
+
+![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/select_github_location.png)
