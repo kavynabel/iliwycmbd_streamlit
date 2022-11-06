@@ -104,9 +104,12 @@ If there are any questions, feel free to reference the completed steamlit app ex
 
 ## Deploy app Locally whil in Devlopment 
 
-- Naviget working directory to app file location
+- Naviget working directory to app file location through terminal
+- Example code: 
+```
+cd Desktop
+```
 - run the following code 
-
 ```
 streamlit run app_name.py
 ```
