@@ -102,7 +102,18 @@ If there are any questions, feel free to reference the completed steamlit app ex
 
 [Iris Streamlit App Example](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/iris_app_example.py)
 
-## Deploy app on Streamlit cloud
+## Deploy app Locally whil in Devlopment 
+
+- Naviget working directory to app file location
+- run the following code 
+
+```
+streamlit run app_name.py
+```
+- Copy & Paste URL if needed
+- Re-Run when code is updated to verify changes
+- Set re-run to automatic to update when file is saved
+        
 
 ## Publishing App on Streamlit Cloud
 
