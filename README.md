@@ -75,6 +75,8 @@ st.map(df)
   
 -  [Linuix Installation](https://docs.anaconda.com/anaconda/install/linux/)
 
+## Docker Setup
+
 ## Fork Repo
 
 iliwycmbd_streamlit Reposistory - 
