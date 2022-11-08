@@ -84,16 +84,19 @@ st.map(df)
 
 ***
 
-#  
+# Stremlit App Creation
 
-## Anaconda Installation 
+## 1.1 Anaconda Installation 
+
+This only needs to be done if you want to run it on your local enviroment. If you do not wish to do this, proceed to Section 1.2
+
 - [Windows Installation](https://docs.anaconda.com/anaconda/install/windows/)
  
 - [Mac OS Installation](https://docs.anaconda.com/anaconda/install/mac-os/)
   
 -  [Linuix Installation](https://docs.anaconda.com/anaconda/install/linux/)
 
-## Docker Setup
+## 1.2 Docker Setup
 -  In VS code install the Dev Containers extension.
 
 Notes From Docker Presentation:
@@ -135,12 +138,12 @@ All of this can also be done from the Docker Desktop app. You can also remove th
 Now we can continually edit and save our streamlit.py file and all we have to do is refresh the tab in our browser for it to update!
 Let's try this by adding a streamlit write statement to our code: st.write("Does this actually work?")
 
-## Fork Repo
+## 2 Fork Repo
 
 iliwycmbd_streamlit Reposistory - 
 [iliwycmbd_streamlit Repo Link](https://github.com/byuibigdata/iliwycmbd_streamlit)
 
-## Pickle iris_ml.py 
+## 3 Pickle iris_ml.py 
 
 In order to be able to deploy a machine learning model in an application for real world use, it will need to be saved into a file that can be deployed. This example uses the method of pickling to make a model deployable. The code to facilitate this process is very simple and will be demonstrated in the following code chunk. The library needs to be imported first to be able to pickle the model. Then the function $pickle.dump()$ can be called to save the model. In the first term of the function that needs to be specified is the model that needs to be pickled. The next term that needs to be specified in the name of the .pkl that the model will be saved to. 
 
@@ -156,7 +159,7 @@ Start by trying to pickle the iris_ml_model.py file found within the iliwycmbd_s
 
 
 
-## Develop Streamlit app on iris_app.py 
+## 4 Develop Streamlit app on iris_app.py 
 
 If there are any questions, feel free to reference the completed steamlit app example file found here:
 
@@ -180,7 +183,7 @@ streamlit run app_name.py
 - Set re-run to automatic to update when file is saved
 
 
-## Publishing App on Streamlit Cloud
+## 4.1 Publishing App on Streamlit Cloud
 
 This section will cover how to publish an app to streamlit cloud. This is very useful for making a dashboard avaliable for internal use within an orginization or for releasing a dashboard for public use.
 
