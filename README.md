@@ -12,7 +12,7 @@ This is the repository for the streamlit presentation.
 |iris_app_example.py   | The finished Streamlit App                     |                
 |iris_ml_example.ipynb | The Complete ML Model with Pickling Code       |
 |iris_ml_model.ipynb   | The Not Complete Iris ML Model - Needs Piclking|
-
+|requirements.txt      | Libraries not included in Streamlit Cloud      |
 
 ***
 
