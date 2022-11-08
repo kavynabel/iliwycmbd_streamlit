@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import shap
+# import shap
 import matplotlib.pyplot as plt
 from sklearn import datasets
 import pickle
@@ -32,7 +32,7 @@ def user_input_features():
 
 df = user_input_features()
 
-load_clf = pickle.load(open('irirs_model.pkl', 'rb'))
+load_clf = pickle.load(open('work/iliwycmbd_streamlit/irirs_model.pkl', 'rb'))
 
 prediction = load_clf.predict(df)
 prediction_proba = load_clf.predict_proba(df)
@@ -53,11 +53,11 @@ st.write('---')
 f = prediction
 
 if f == "Setosa":
-    setosa = st.image("images/setosa.jpg", caption = "Iris Setosa", width = 350)
+    setosa = st.image("work/iliwycmbd_streamlit/images/setosa.jpg", caption = "Iris Setosa", width = 350)
 elif f == "Virginica":
-    virginica = st.image("images/virginica.jpg", caption = "Iris Virginica", width = 350)
+    virginica = st.image("work/iliwycmbd_streamlit/images/virginica.jpg", caption = "Iris Virginica", width = 350)
 elif f == "Versicolor":
-    versicolor = st.image("images/versicolor2.jpg", caption = "Iris Versicolor", width = 350)
+    versicolor = st.image("work/iliwycmbd_streamlit/images/versicolor2.jpg", caption = "Iris Versicolor", width = 350)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
