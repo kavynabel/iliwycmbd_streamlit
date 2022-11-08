@@ -95,7 +95,8 @@ st.map(df)
 
 ## Docker Setup
 -  In VS code install the Dev Containers extension.
--  Image
+
+![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/dev_containers.jpg)
 
 Open powershell as an admin
 Navigate to your 460 folder in your powershell directory.
@@ -118,7 +119,7 @@ Run this code to get the url to open the allspark notebook.
 
 Go to VS code
 - Click bottom >< thing from dev container extension.
-Image
+![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/dev_cont_icon_launch.jpg)
 - Click attach to running container, this should show you that container that we ran from Docker groups code, click that and you will be taken to a new vs code window.
 - Open folder and click ok to load everything in.
 - Open your terminal (you can press ctrl j to do this as well)
