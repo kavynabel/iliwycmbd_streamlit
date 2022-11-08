@@ -26,8 +26,11 @@ This is the repository for the streamlit presentation.
 
 - What it allowed us to do
 
-
 - Finished Titanic ML app 
+
+#### App development Examples 
+
+[4 Part Series on making and deploying a Streamlit Application](https://www.youtube.com/watch?v=-IM3531b1XU&t=452s&ab_channel=M%C4%B1sraTurp)
 
 ## ML Model deployment with Pickling 
 [Model Pickling Example & Docuementation](https://medium.com/@maziarizadi/pickle-your-model-in-python-2bbe7dba2bbb)
