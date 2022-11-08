@@ -11,8 +11,8 @@ iris = pd.read_csv('https://raw.githubusercontent.com/byuibigdata/iliwycmbd_stre
 
 iris = iris.rename(columns={'sepal.length': 'sepallength', 'sepal.width': 'sepalwidth', 'petal.length': 'petallength', 'petal.width': 'petalwidth'})
 
-X = iris.loc[:, iris.columns != 'class']
-Y = iris.loc[:, iris.columns == 'class']
+X = iris.loc[:, iris.columns != 'variety']
+Y = iris.loc[:, iris.columns == 'variety']
 
 
 st.sidebar.header('Specify Input Parameters')
