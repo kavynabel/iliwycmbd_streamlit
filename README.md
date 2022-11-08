@@ -98,9 +98,13 @@ st.map(df)
 
 ![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/dev_containers.jpg)
 
-Open powershell as an admin and navigate to your 460 folder in your powershell directory.
+Open powershell as an admin.
 
-Run the following code
+### Navigate to your 460 folder in your powershell directory.
+
+After getting to your 460 folder in your powershell directory then
+
+run the following code
 
 ```
 docker pull jupyter/all-spark-notebook
