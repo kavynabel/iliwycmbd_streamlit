@@ -170,7 +170,7 @@ iliwycmbd_streamlit Reposistory -
 
 ## 2.1 Clone Repo
 
-Clone the repository to your computer and make sure to save the file in your DS460 Folder or where your docker Container is. This will allow to work on the files within your docker enviroment. 
+Clone the repository to your computer and make sure to save the file in your DS460 Folder or where your docker Container is. This will allow you to work on the files within your docker enviroment. 
 
 ## 3 Pickle iris_ml.py 
 
