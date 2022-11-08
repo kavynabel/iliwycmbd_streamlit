@@ -1,7 +1,24 @@
 # iliwycmbd_streamlit
 This is the repository for the streamlit presentation.
 
+### Docuement Summary 
+
+
+
+### Repository File Dictionary 
+
+| File Name            |Description                                     |
+|----------------------|------------------------------------------------|
+|README.md             | Overview and Streamlit Docuemnetation.         |
+|irirs_model.pkl       | The Pickled ML Model for the Iris Dataset      | 
+|iris.csv.             | The Dataset in csv format                      | 
+|iris_app.py           | A partily complete copy of the app to work on  |                
+|iris_app_example.py   | The finished Streamlit App                     |                
+|iris_ml_example.ipynb | The Complete ML Model with Pickling Code       |
+|iris_ml_model.ipynb   | The Not Complete Iris ML Model - Needs Piclking|
 ***
+
+# Streamlit Application Overview & Docuementation
 
 ## ML Deployment with Streamlit
 
@@ -66,7 +83,7 @@ st.map(df)
 
 ***
 
-#  Docuementation for Iris Streamlit ML App
+#  
 
 ## Anaconda Installation 
 - [Windows Installation](https://docs.anaconda.com/anaconda/install/windows/)
@@ -146,6 +163,8 @@ If there are any questions, feel free to reference the completed steamlit app ex
 
 ## Deploy app Locally whil in Devlopment 
 
+This is how to deploy a local streamlit app for use during app development. In this deployment it will only be accesible on the computer that it was deployed on. It is useful to verify how th app currently looks and to view any changes made. It is also benficial after an app is deployed to view any changes before pushing to github/production.  
+
 - Naviget working directory to app file location through terminal
 - Example code: 
 ```
@@ -158,7 +177,7 @@ streamlit run app_name.py
 - Copy & Paste URL if needed
 - Re-Run when code is updated to verify changes
 - Set re-run to automatic to update when file is saved
-        
+
 
 ## Publishing App on Streamlit Cloud
 
