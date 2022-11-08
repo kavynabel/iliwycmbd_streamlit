@@ -110,12 +110,12 @@ Then run one of these two options below based on your computer.
 
 (MacOS/Linux)
 ```
-docker run -it -p 8888:8888 8501:8501 -v "${PWD}":/home/jovyan/work jupyter/all-spark-notebook
+docker run -it -p 8888:8888 -p 8501:8501 -v "${PWD}":/home/jovyan/work jupyter/all-spark-notebook
 ```
 
 (Windows)
 ```
-docker run -it -p 8888:8888 8501:8501 -v "$(pwd):/home/jovyan/work" jupyter/all-spark-notebook 
+docker run -it -p 8888:8888 -p 8501:8501 -v "$(pwd):/home/jovyan/work" jupyter/all-spark-notebook 
 ```
 Use the url to open the allspark notebook.
 
