@@ -31,7 +31,7 @@ df = user_input_features()
 
 load_clf = pickle.load(open('irirs_model.pkl', 'rb'))
 
-prediction = load_clf.predict(df)
+prediction = prediction[0]
 
 st.header('Specified Input parameters')
 st.write(df)
@@ -41,16 +41,12 @@ st.header('Prediction of Flower Type')
 st.write(prediction)
 st.write('---')
 
-## add images 
 f = prediction
 
-if f == "setosa":
+if f == "Setosa":
     setosa = st.image("images/setosa.jpg", caption = "Iris Setosa", width = 350)
-elif f == "virginica":
+elif f == "Virginica":
     virginica = st.image("images/virginica.jpg", caption = "Iris Virginica", width = 350)
-elif f == "versicolor":
+elif f == "Versicolor":
     versicolor = st.image("images/versicolor2.jpg", caption = "Iris Versicolor", width = 350)
-
-
-
 
