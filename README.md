@@ -219,11 +219,21 @@ This section will cover how to publish an app to streamlit cloud. This is very u
 
 The first step in publishing an app with streamlit is to make sure that the necessary files have been uploaded to right github repositriy. If that has not been done, be sure to do that now. 
 
+IF you are calling any libraries that are not included in a standard pytohn file, a text file called "requirements" will need to be added to your file directory or repository. Simply create a text file and add the desired libraries to the file followed by a "-dev". The folloiwing is an example of what you would do with the pandas library. 
+
+```
+pandas-dev
+```
+
 After the files that are going to be published are pushed to github, it is time to log into streamlit. If an account needs to be created please use the following link. 
 
 ```
 https://share.streamlit.io/signup
 ```
+
+This is an example of this app published on the streamlit cloud app:
+[Iris_Example_App](https://byuibigdata-iliwycmbd-streamlit-iris-app-example-u6z8lb.streamlit.app/)
+
 
 After logging in please navigate to the home page. This will look like the image below. To deploy a new app begin by selecting the button titled "New app". This button is highlighted in the image below. 
 
