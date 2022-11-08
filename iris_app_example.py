@@ -40,3 +40,17 @@ st.write('---')
 st.header('Prediction of Flower Type')
 st.write(prediction)
 st.write('---')
+
+## add images 
+f = prediction
+
+if f == "setosa":
+    setosa = st.image("images/setosa.jpg", caption = "Iris Setosa", width = 350)
+elif f == "virginica":
+    virginica = st.image("images/virginica.jpg", caption = "Iris Virginica", width = 350)
+elif f == "versicolor":
+    versicolor = st.image("images/versicolor2.jpg", caption = "Iris Versicolor", width = 350)
+
+
+
+
