@@ -1,4 +1,4 @@
-matplotlib
-altair
-pandas
-streamlit
+matplotlib-dev
+altair-dev
+pandas-dev
+streamlit-dev
