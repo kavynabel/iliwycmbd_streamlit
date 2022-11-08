@@ -144,12 +144,18 @@ streamlit run "work/streamlit.py"
 Now we can continually edit and save our streamlit.py file and all we have to do is refresh the tab in our browser for it to update!
 Let's try this by adding a streamlit write statement to our code: st.write("Does this actually work?")
 
-## Fork Repo
+## 2 Fork Repo
 
 iliwycmbd_streamlit Reposistory - 
 [iliwycmbd_streamlit Repo Link](https://github.com/byuibigdata/iliwycmbd_streamlit)
 
-## Pickle iris_ml.py 
+
+## 2.1 Clone Repo
+
+Clone the repository to your computer and make sure to save the file in your DS460 Folder or where your docker Container is. This will allow to work on the files within your docker enviroment. 
+
+## 3 Pickle iris_ml.py 
+
 
 In order to be able to deploy a machine learning model in an application for real world use, it will need to be saved into a file that can be deployed. This example uses the method of pickling to make a model deployable. The code to facilitate this process is very simple and will be demonstrated in the following code chunk. The library needs to be imported first to be able to pickle the model. Then the function $pickle.dump()$ can be called to save the model. In the first term of the function that needs to be specified is the model that needs to be pickled. The next term that needs to be specified in the name of the .pkl that the model will be saved to. 
 
