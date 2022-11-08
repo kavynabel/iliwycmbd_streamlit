@@ -12,7 +12,7 @@ This is the repository for the streamlit presentation.
 |iris_app_example.py   | The finished Streamlit App                     |                
 |iris_ml_example.ipynb | The Complete ML Model with Pickling Code       |
 |iris_ml_model.ipynb   | The Not Complete Iris ML Model - Needs Piclking|
-
+|requirements.txt      | Libraries not included in Streamlit Cloud      |
 
 ***
 
@@ -95,50 +95,68 @@ st.map(df)
 
 ## Docker Setup
 -  In VS code install the Dev Containers extension.
--  Image
 
-Open powershell as an admin
-Navigate to your 460 folder in your powershell directory.
-Run:
+![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/dev_containers.jpg)
+
+Open powershell as an admin and navigate to your 460 folder in your powershell directory.
+
+Run the following code
+
 ```
 docker pull jupyter/all-spark-notebook
 ```
 
-Then one of these two options below based on your computer.
+Then run one of these two options below based on your computer.
+
 (MacOS/Linux)
 ```
-Run: docker run -it -p 8888:8888 8501:8501 -v "${PWD}":/home/jovyan/work jupyter/all-spark-notebook
+docker run -it -p 8888:8888 8501:8501 -v "${PWD}":/home/jovyan/work jupyter/all-spark-notebook
 ```
 
 (Windows)
 ```
-Run: docker run -it -p 8888:8888 8501:8501 -v "$(pwd):/home/jovyan/work" jupyter/all-spark-notebook 
+docker run -it -p 8888:8888 8501:8501 -v "$(pwd):/home/jovyan/work" jupyter/all-spark-notebook 
 ```
-Run this code to get the url to open the allspark notebook.
+Use the url to open the allspark notebook.
+
 
 Go to VS code
 - Click bottom >< thing from dev container extension.
-Image
-- Click attach to running container, this should show you that container that we ran from Docker groups code, click that and you will be taken to a new vs code window.
-- Open folder and click ok to load everything in.
-- Open your terminal (you can press ctrl j to do this as well)
-- Run this code to install streamlit: pip install streamlit
+
+![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/dev_cont_icon_launch.jpg)
+
+- Click attach to running container, this will show you that container that we ran through docker from powershell. Click that and you will be taken to a new vs code window.
+- Bring in the left side bar, to folders, and click Open folder. Then click ok to load everything in.
+
+Note - you should see many files from the docker container and all the files from the GitHub repo that you cloned down to your class folder.
+
+Open your terminal
+
+- Run this code to install streamlit: 
+```
+pip install streamlit
+```
 - Create a python file in the work folder called streamlit.py
-- In that file write this code to import streamlit: 
+
+In that file write this code to import streamlit: 
 ```
 import streamlit as st
 ```
-- Let's put a title to our app and launch it. Write the code: 
+
+Let's put a title to our app and launch it. Write this code
+
 ```
 st.title("This is my streamlit app")
 ```
 - Save the file
-- In your terminal type the command: 
+
+In your terminal type the command: 
 ```
 streamlit run "work/streamlit.py"
 ```
 - Ctrl click the External URL, this will launch your app into your web browser.
-- If this does not work for you, you may need to go to it directly to it by putting this in your searchbar: localhost:8501
+
+If this does not work for you, you may need to go to it directly to it by putting this in your searchbar: localhost:8501
 
 
 Now we can continually edit and save our streamlit.py file and all we have to do is refresh the tab in our browser for it to update!
@@ -152,7 +170,7 @@ iliwycmbd_streamlit Reposistory -
 
 ## 2.1 Clone Repo
 
-Clone the repository to your computer and make sure to save the file in your DS460 Folder or where your docker Container is. This will allow to work on the files within your docker enviroment. 
+Clone the repository to your computer and make sure to save the file in your DS460 Folder or where your docker Container is. This will allow you to work on the files within your docker enviroment. 
 
 ## 3 Pickle iris_ml.py 
 
