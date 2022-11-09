@@ -97,10 +97,11 @@ st.map(df)
 Go to our 460 class GitHub and click Repositories. Search for iliwycmbd_streamlit and fork this repo to your personal GitHub.
 
 - Open a new window in VS code
-- Click Clone Git Repository and click Clone from GitHub
+- Click Clone Git Repository and click Clone from GitHub.
+
 If it says it wants to sign in using GitHub click Allow and Authorize Visual_Studio_Code. Put in your GitHub password. Then click open Visual Studio code and it will show your repositories in the search bar. 
 
-Click on your iliwycmbd_streamlit repo and save it to your 460 folder. It is crucial to save it in your class folder! This will make everything run smoothly for you!
+Click on your iliwycmbd_streamlit repo and save it to your 460 folder. It is crucial to save it in your class folder! This will make everything run smoothly for you today.
 
 ## Docker Setup
 -  In VS code install the Dev Containers extension.
