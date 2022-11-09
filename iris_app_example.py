@@ -61,3 +61,22 @@ elif f == "Versicolor":
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+
+
+## Data Table
+st.header('Statistics of Dataframe')
+#st.checkbox("Use container width", value=False, key="use_container_width")
+st.table(iris.describe())
+
+st.header('Header of Dataframe')
+#st.checkbox("Use container width", value=False, key="use_container_width2")
+st.table(iris.head())
+
+# plot
+st.header('Sepal Length by Species')
+
+c = alt.Chart(iris).mark_line().encode(
+    y='sepallength', x='variety')
+
+st.altair_chart(c, use_container_width=True)
