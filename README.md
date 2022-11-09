@@ -132,7 +132,7 @@ Go to VS code
 - Click attach to running container, this will show you that container that we ran through docker from powershell. Click that and you will be taken to a new vs code window.
 - Bring in the left side bar, to folders, and click Open folder. Then click ok to load everything in.
 
-Note - you should see many files from the docker container and all the files from the GitHub repo that you cloned down to your class folder.
+Note - In the work folder you will see the repository folder iliwycmbd_streamlit containing all the files from the GitHub repo that you cloned down to your 460 folder.
 
 Open your terminal
 
@@ -140,14 +140,16 @@ Open your terminal
 ```
 pip install streamlit
 ```
-- Create a python file in the work folder called streamlit.py
 
-In that file write this code to import streamlit: 
+- In the work folder through the iliwycmbd_streamlit folder, open the iris_app.py file 
+
+In that file write this code to import streamlit under the written comment: 
+
 ```
 import streamlit as st
 ```
 
-Let's put a title to our app and launch it. Write this code
+Let's put a title in our app and launch it. Write this code
 
 ```
 st.title("This is my streamlit app")
@@ -156,15 +158,15 @@ st.title("This is my streamlit app")
 
 In your terminal type the command: 
 ```
-streamlit run "work/streamlit.py"
+streamlit run "work/iliwycmbd_streamlit/iris_app_example.py"
 ```
 - Ctrl click the External URL, this will launch your app into your web browser.
 
-If this does not work for you, you may need to go to it directly to it by putting this in your searchbar: localhost:8501
+If this does not work for you, you will need to go directly to it by putting this in the searchbar of your browser: localhost:8501
 
 
-Now we can continually edit and save our streamlit.py file and all we have to do is refresh the tab in our browser for it to update!
-Let's try this by adding a streamlit write statement to our code: st.write("Does this actually work?")
+Now we can continually edit and save our file, and all we have to do is refresh the streamlit app tab in our browser for it to update!
+Let's try this by adding a streamlit write statement to our code: st.write("Adding more to my app")
 
 ## 2 Fork Repo
 
