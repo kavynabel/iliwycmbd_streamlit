@@ -151,7 +151,8 @@ Open your terminal
 pip install streamlit
 ```
 
-- In the work folder through the iliwycmbd_streamlit folder, open the iris_app.py file 
+
+In the work folder through the iliwycmbd_streamlit folder, open the iris_app.py file 
 
 In that file write this code to import streamlit under the written comment: 
 
@@ -168,7 +169,7 @@ st.title("This is my streamlit app")
 
 In your terminal type the command: 
 ```
-streamlit run "work/iliwycmbd_streamlit/iris_app_example.py"
+streamlit run "work/iliwycmbd_streamlit/iris_app.py"
 ```
 - Ctrl click the External URL, this will launch your app into your web browser.
 
@@ -176,7 +177,13 @@ If this does not work for you, you will need to go directly to it by putting thi
 
 
 Now we can continually edit and save our file, and all we have to do is refresh the streamlit app tab in our browser for it to update!
-Let's try this by adding a streamlit write statement to our code: st.write("Adding more to my app")
+
+
+Let's try this by adding a streamlit write statement to our code:
+```
+st.write("Adding more to my app")
+```
+- save the file, and go to your streamlit app tab and refresh the page. You will see your results here.
 
 ## 2 Fork Repo
 
