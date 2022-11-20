@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn import datasets
 import pickle
 import numpy as np
+import altair as alt
 
 
 iris = pd.read_csv('https://raw.githubusercontent.com/byuibigdata/iliwycmbd_streamlit/main/iris.csv')
@@ -61,3 +62,22 @@ elif f == "Versicolor":
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+
+
+## Data Table
+st.header('Statistics of Dataframe')
+#st.checkbox("Use container width", value=False, key="use_container_width")
+st.table(iris.describe())
+
+st.header('Header of Dataframe')
+#st.checkbox("Use container width", value=False, key="use_container_width2")
+st.table(iris.head())
+
+# plot
+st.header('Sepal Length by Species')
+
+c = alt.Chart(iris).mark_line().encode(
+    y='sepallength', x='variety')
+
+st.altair_chart(c, use_container_width=True)
