@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn import datasets
 import pickle
 import numpy as np
+import altair as alt
 
 
 iris = pd.read_csv('https://raw.githubusercontent.com/byuibigdata/iliwycmbd_streamlit/main/iris.csv')
