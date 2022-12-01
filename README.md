@@ -17,32 +17,29 @@ This is the repository for the streamlit presentation.
 ***
 
 # Streamlit Application Overview & Docuementation
+What is [Streamlit?](https://streamlit.io/)
+- importable package designed for creating webpages from simple scripts
+- uses basic commands to deploy a local webpage with interactive components and other elements from your python code
+- this allows us to create our ML model using Python scripts and then deploy it to a shareable webpage
 
 ## ML Deployment with Streamlit
-
-- What stream is
-
-- What it allowed us to do
-
-- Finished Titanic ML app 
 
 #### App development Examples 
 
 [4 Part Series on making and deploying a Streamlit Application](https://www.youtube.com/watch?v=-IM3531b1XU&t=452s&ab_channel=M%C4%B1sraTurp)
 
 ## ML Model deployment with Pickling 
-[Model Pickling Example & Docuementation](https://medium.com/@maziarizadi/pickle-your-model-in-python-2bbe7dba2bbb)
+[Model Pickling Example & Documentation](https://medium.com/@maziarizadi/pickle-your-model-in-python-2bbe7dba2bbb)
 
 
 ## Charts & Programming in Streamlit
-Streamlit docuementation and programing examples can be found here
-- [Streamlit Docuementation](https://docs.streamlit.io/)
+Streamlit documentation and programming examples can be found [here](https://docs.streamlit.io/)
 
 ### Charts
 
 #### Line Charts 
 
-- [Line Chart Docuementation](https://docs.streamlit.io/library/api-reference/charts/st.line_chart)
+- [Line Chart Documentation](https://docs.streamlit.io/library/api-reference/charts/st.line_chart)
 
 ```
 chart_data = pd.DataFrame(
@@ -54,7 +51,7 @@ st.line_chart(chart_data)
 
 #### Bar Charts 
 
-- [Bar Chart Docuementation](https://docs.streamlit.io/library/api-reference/charts/st.bar_chart)
+- [Bar Chart Documentation](https://docs.streamlit.io/library/api-reference/charts/st.bar_chart)
 
 ```
 chart_data = pd.DataFrame(
@@ -66,7 +63,7 @@ st.bar_chart(chart_data)
 
 #### Maps
 
-- [Map Chart Docuementation](https://docs.streamlit.io/library/api-reference/charts/st.map)
+- [Map Documentation](https://docs.streamlit.io/library/api-reference/charts/st.map)
 
 ```
 import streamlit as st
@@ -79,55 +76,57 @@ df = pd.DataFrame(
 
 st.map(df)
 ```
-### UI Programing
 
+### UI Programing
 
 ***
 
 #  
 
 ## Anaconda Installation 
+We recommend you use docker for this example, but you usually need Anaconda to run locally.
 - [Windows Installation](https://docs.anaconda.com/anaconda/install/windows/)
  
 - [Mac OS Installation](https://docs.anaconda.com/anaconda/install/mac-os/)
   
--  [Linuix Installation](https://docs.anaconda.com/anaconda/install/linux/)
+-  [Linux Installation](https://docs.anaconda.com/anaconda/install/linux/)
 
 ## Fork and Clone Repository
-Go to our 460 class GitHub and click Repositories. Search for iliwycmbd_streamlit and fork this repo to your personal GitHub.
+Fork this repository to your personal Github account.
 
 - Open a new window in VS code
-- Click Clone Git Repository and click Clone from GitHub.
+- Click "Clone Git Repository" then "Clone from GitHub"
 
-If it says it wants to sign in using GitHub click Allow and Authorize Visual_Studio_Code. Put in your GitHub password. Then click open Visual Studio code and it will show your repositories in the search bar. 
+If it asks for sign-in using GitHub, click "Allow" and "Authorize Visual_Studio_Code". Put in your GitHub password. Then click "Open Visual Studio Code" and it will show your repositories in the search bar. 
 
-Click on your iliwycmbd_streamlit repo and save it to your 460 folder. It is crucial to save it in your class folder! This will make everything run smoothly for you today.
+Click on your iliwycmbd_streamlit repo and save it to your Big Data folder (where you keep DS460 files). It is crucial to save it in your class folder! This will make everything run smoothly for you today.
 
 ## Docker Setup
 -  In VS code install the Dev Containers extension.
 
 ![image](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/Publish%20on%20Streamlit%20Cloud/dev_containers.jpg)
 
+#### Windows
 Open powershell as an admin.
 
-### Navigate to your 460 folder in your powershell directory.
+#### Mac OS
+Open a terminal.
 
-After getting to your 460 folder in your powershell directory then
-
-run the following code
+### Navigate to your 460 folder in your powershell/terminal directory.
+Then copy and paste this code 👇
 
 ```
 docker pull jupyter/all-spark-notebook
 ```
 
-Then run one of these two options below based on your computer.
+Run one of these two options below based on your computer.
 
-(MacOS/Linux)
+#### MacOS/Linux
 ```
 docker run -it -p 8888:8888 -p 8501:8501 -v "${PWD}":/home/jovyan/work jupyter/all-spark-notebook
 ```
 
-(Windows)
+#### Windows
 ```
 docker run -it -p 8888:8888 -p 8501:8501 -v "$(pwd):/home/jovyan/work" jupyter/all-spark-notebook 
 ```
