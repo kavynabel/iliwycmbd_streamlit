@@ -218,7 +218,7 @@ If there are any questions, feel free to reference the completed steamlit app ex
 
 [Iris Streamlit App Example](https://github.com/byuibigdata/iliwycmbd_streamlit/blob/main/iris_app_example.py)
 
-## Deploy app Locally whil in Devlopment 
+## Deploy app Locally while in Devlopment 
 
 This is how to deploy a local streamlit app for use during app development. In this deployment it will only be accesible on the computer that it was deployed on. It is useful to verify how th app currently looks and to view any changes made. It is also benficial after an app is deployed to view any changes before pushing to github/production.  
 
