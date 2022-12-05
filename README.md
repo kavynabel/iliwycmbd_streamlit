@@ -110,6 +110,7 @@ Click on your iliwycmbd_streamlit repo and save it to your Big Data folder (wher
 Open powershell as an admin.
 
 #### Mac OS
+Open docker desktop.
 Open a terminal.
 
 ### Navigate to your 460 folder in your powershell/terminal directory.
